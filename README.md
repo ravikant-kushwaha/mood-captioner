@@ -38,20 +38,20 @@ Everything runs **ephemerally** and can run locally on a small machine.
 </p>
 
 ## 📂 Repository Structure
-mood-captioner/
-│
-├── backend/
-│ ├── app.py
-│ ├── requirements.txt
-│ └── Dockerfile
-│
-├── frontend/
-│ ├── src/
-│ ├── package.json
-│ └── Dockerfile
-│
-├── docker-compose.yml
-└── README.md
+mood-captioner/<br />
+│<br />
+├── backend/<br />
+│ ├── app.py<br />
+│ ├── requirements.txt<br />
+│ └── Dockerfile<br />
+│<br />
+├── frontend/<br />
+│ ├── src/<br />
+│ ├── package.json<br />
+│ └── Dockerfile<br />
+│<br />
+├── docker-compose.yml<br />
+└── README.md<br />
 
 ---
 
@@ -59,16 +59,16 @@ mood-captioner/
 
 ### 1️⃣ Backend
 
-cd backend
-pip install -r requirements.txt
-uvicorn app:app --reload --port 8000
+cd backend<br />
+pip install -r requirements.txt<br />
+uvicorn app:app --reload --port 8000<br />
 
 ### 2️⃣ Frontend (Angular)
 
-cd frontend
-npm install
-npm start
+cd frontend<br />
+npm install<br />
+npm start<br />
 
 ### 3️⃣ Build & run both services
 
-docker compose up --build
+docker compose up --build<br />
