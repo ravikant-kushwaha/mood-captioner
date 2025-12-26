@@ -1,0 +1,24 @@
+<input type="file" (change)="onFileSelect($event)" />
+
+<select [(ngModel)]="mood">
+  <option value="happy">Happy</option>
+  <option value="sad">Sad</option>
+  <option value="mysterious">Mysterious</option>
+  <option value="dramatic">Dramatic</option>
+</select>
+
+<button (click)="submit()">Generate</button>
+
+@for (msg of status; track $index) {
+<div>
+  {{ msg }}
+</div>
+}
+
+@if (caption) {
+<h3>Result:</h3>
+<p>{{ caption }}</p>
+
+}
+
+<router-outlet />
