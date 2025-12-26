@@ -33,3 +33,6 @@ Everything runs **ephemerally** and can run locally on a small machine.
 
 ## 🏗 Architecture (DB-less & Realtime)
 
+<p align="center">
+  <img src="docs/images/architecture.png" width="650">
+</p>
