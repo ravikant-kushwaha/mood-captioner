@@ -36,3 +36,39 @@ Everything runs **ephemerally** and can run locally on a small machine.
 <p align="center">
   <img src="docs/architecture.png" width="650">
 </p>
+
+## 📂 Repository Structure
+mood-captioner/
+│
+├── backend/
+│ ├── app.py
+│ ├── requirements.txt
+│ └── Dockerfile
+│
+├── frontend/
+│ ├── src/
+│ ├── package.json
+│ └── Dockerfile
+│
+├── docker-compose.yml
+└── README.md
+
+---
+
+# 🧑‍💻 Development Setup (Local)
+
+### 1️⃣ Backend
+
+cd backend
+pip install -r requirements.txt
+uvicorn app:app --reload --port 8000
+
+### 2️⃣ Frontend (Angular)
+
+cd frontend
+npm install
+npm start
+
+### 3️⃣ Build & run both services
+
+docker compose up --build
